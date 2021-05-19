@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7MTyBXjvAE+T5Qcqbymrjvu0dkYlU/kVU9kzof/AoqsN/0N2WdntQsTekj1mrO25s2xJ9jPXhS4YyX26CbC9lg==",
+  "success": true,
+  "projectFilePath": "E:\\ITI\\ASP.NET\\AspPageWebApplication\\AspPageWebApplication.Domain\\AspPageWebApplication.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MazenHeshamIbrahimSa\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
