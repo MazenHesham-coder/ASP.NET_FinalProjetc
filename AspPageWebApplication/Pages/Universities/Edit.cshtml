@@ -1,0 +1,21 @@
+﻿@page
+@model AspPageWebApplication.Pages.Universities.EditModel
+@{
+}
+<h2 style="text-align:center;">
+    Edit
+</h2>
+<form method="post">
+    <input type="hidden" asp-for="University.Id" /> @*عشان نقدر نرجع الأي دي مع الداتا اللي راجعة بس من غير ما يتعرض للمستخدم ويعدل فيه*@
+
+    <div class="form-group">
+        <label asp-for="University.Name"></label>
+        <input asp-for="University.Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="University.Address"></label>
+        <input asp-for="University.Address" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+
+</form>

@@ -1,0 +1,61 @@
+﻿@page
+@model AspPageWebApplication.Pages.Univercities.ListModel
+@{
+}
+
+<h1>
+    @Model.Message @*The Model is an object of our list page*@
+</h1>
+
+<form method="get">
+    <div class=" form-group">
+        <div class="input-group">
+            <input type="search" class="form-control" value="" placeholder="Search by name" asp-for="searchName" />
+            <button class="btn btn-primary">Search</button>
+        </div>
+    </div>
+
+</form>
+<table class="table">
+    <tr>
+        <td class="font-weight-bold">Id</td>
+        <td class="font-weight-bold">Name</td>
+        <td class="font-weight-bold">Student count</td>
+        <td class="font-weight-bold">Address</td>
+    </tr>
+
+
+    @foreach (var uni in Model.UniversityDTOList.Universities)
+    {
+        <tr>
+            <td>@uni.Id</td>
+            <td>@uni.Name</td>
+            <td>@uni.StudentCount</td>
+            <td>@uni.Address</td>
+            <td><a asp-page="./Details" asp-route-universityId="@uni.Id">Detalis</a></td>
+
+            <td>
+                <a asp-page="./Edit" asp-route-universityId=" @uni.Id">Edit</a>
+            </td>
+
+            <td>
+                <a asp-page="./Delete" asp-route-universityId=" @uni.Id">Delete</a>
+            </td>
+
+            <td>
+                <a asp-page="./Students" asp-route-universityId=" @uni.Id">Students</a>
+            </td>
+
+
+
+        </tr>
+
+    }
+
+</table>
+
+<td>
+    <a asp-page="./Edit" class="btn btn-dark">Add University</a>
+</td>
+
+

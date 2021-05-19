@@ -1,0 +1,13 @@
+﻿@page
+@model AspPageWebApplication.Pages.Universities.DeleteModel
+@{
+}
+<div style="text-align:center;" class="alert alert-danger">
+    @Model.University.Name University will be deleted permanently!
+</div>
+<form method="post"> 
+    <button type="submit" class="btn btn-danger">Yes</button>
+    <a asp-page="./List" class="btn btn-primary">Cancel</a>
+     
+      
+</form>
